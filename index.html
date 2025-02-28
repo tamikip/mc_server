@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机械农场 - Minecraft模组服务器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/server-logo.png" alt="服务器Logo" id="logo">
+                <h1>机械农场</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#features">特色</a></li>
+                    <li><a href="#mods">模组介绍</a></li>
+                    <li><a href="#gallery">游戏画廊</a></li>
+                    <li><a href="#join">加入我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>欢迎来到机械农场</h2>
+            <p>一个融合了机械动力、农夫乐事与TACZ枪械的独特Minecraft体验</p>
+            <div class="cta-buttons">
+                <a href="#join" class="cta-button primary">立即加入</a>
+                <a href="#mods" class="cta-button secondary">了解模组</a>
+            </div>
+        </div>
+        <div class="server-stats">
+            <div class="stat">
+                <i class="fas fa-users"></i>
+                <span id="player-count">0</span>
+                <p>在线玩家</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span id="uptime">99.9%</span>
+                <p>服务器状态</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-calendar-alt"></i>
+                <span id="established">2025年</span>
+                <p>成立时间</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2 class="section-title">服务器特色</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                <h3>机械动力</h3>
+                <p>建造复杂的机械系统，自动化你的生产线，体验工业革命的乐趣。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                <h3>农夫乐事</h3>
+                <p>种植多样化的作物，饲养各种动物，打造你的梦想农场。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
+                <h3>TACZ枪械</h3>
+                <p>体验高质量的枪械系统，保卫你的基地，参与PVP或团队作战。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-users"></i></div>
+                <h3>友好社区</h3>
+                <p>加入我们活跃的玩家社区，结交新朋友，共同创造和冒险。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mods" class="mods">
+        <h2 class="section-title">核心模组介绍</h2>
+        <div class="mods-container">
+            <div class="mod-card" id="create-mod">
+                <div class="mod-image">
+                    <!-- 确保图片路径正确，并添加onerror处理 -->
+                    <img src="images/create-mod.jpg" alt="机械动力模组" onerror="this.src='https://via.placeholder.com/400x300?text=机械动力模组'">
+                </div>
+                <div class="mod-info">
+                    <h3>机械动力 (Create)</h3>
+                    <p>一个革命性的科技模组，让你能够建造复杂的机械系统。利用齿轮、传动轴和传送带创建自动化工厂，处理资源，制造产品。</p>
+                    <ul class="mod-features">
+                        <li>动态的机械传动系统</li>
+                        <li>自动化生产线</li>
+                        <li>复杂的动力系统</li>
+                        <li>精美的视觉效果和动画</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 对其他模组卡片做同样的修改 -->
+            <div class="mod-card" id="farmers-delight">
+                <div class="mod-image">
+                    <img src="images/farmers-delight.jpg" alt="农夫乐事模组" onerror="this.src='https://via.placeholder.com/400x300?text=农夫乐事模组'">
+                </div>
+                <div class="mod-info">
+                    <h3>农夫乐事 (Farmer's Delight)</h3>
+                    <p>这个模组极大丰富Minecraft中的农业和烹饪系统。种植新的作物，使用新的烹饪工具，制作美味的食物。</p>
+                    <ul class="mod-features">
+                        <li>新增多种作物和食材</li>
+                        <li>烹饪锅和切菜板等厨具</li>
+                        <li>复杂的食谱系统</li>
+                        <li>农业工具和装饰</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mod-card" id="tacz-guns">
+                <div class="mod-image">
+                    <img src="images/tacz-guns.jpg" alt="TACZ枪械模组" onerror="this.src='https://via.placeholder.com/400x300?text=TACZ枪械模组'">
+                </div>
+                <div class="mod-info">
+                    <h3>TACZ枪械模组</h3>
+                    <p>为游戏添加了高质量、平衡的枪械系统。从手枪到狙击枪，应有尽有，让你的战斗体验更加刺激。</p>
+                    <ul class="mod-features">
+                        <li>多种类型的枪械和弹药</li>
+                        <li>真实的射击机制和后坐力</li>
+                        <li>可自定义的配件系统</li>
+                        <li>平衡的PVP体验</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">游戏画廊</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/gallery1.jpg" alt="机械工厂">
+                <div class="gallery-caption">玩家建造的大型自动化工厂</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery2.jpg" alt="农场">
+                <div class="gallery-caption">繁荣的农场与牧场</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery3.jpg" alt="枪械展示">
+                <div class="gallery-caption">TACZ枪械模组展示</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery4.jpg" alt="社区活动">
+                <div class="gallery-caption">玩家社区活动</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery5.jpg" alt="建筑展示">
+                <div class="gallery-caption">精美建筑展示</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery6.jpg" alt="红石机械">
+                <div class="gallery-caption">复杂的红石与机械结合</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join">
+        <h2 class="section-title">如何加入我们</h2>
+        <div class="join-container">
+            <div class="server-info">
+                <h3>服务器信息</h3>
+                <div class="info-item">
+                    <span class="info-label">服务器地址:</span>
+                    <span class="info-value" id="server-ip">play.simpfun.cn:13915</span>
+                    <button class="copy-btn" onclick="copyToClipboard('server-ip')">复制</button>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">游戏版本:</span>
+                    <span class="info-value">Forge 1.20.1</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">模组包下载:</span>
+                    <a href="#" class="download-btn">下载模组包</a>
+                </div>
+            </div>
+            
+            <div class="community-links">
+                <h3>加入社区</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link discord">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                    <a href="#" class="social-link qq">
+                        <i class="fab fa-qq"></i>
+                        <span>QQ群</span>
+                    </a>
+                    <a href="#" class="social-link bilibili">
+                        <i class="fab fa-bilibili"></i>
+                        <span>哔哩哔哩</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/server-logo.png" alt="服务器Logo">
+                <h3>机械农场</h3>
+            </div>
+            <div class="footer-links">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#features">特色</a></li>
+                    <li><a href="#mods">模组介绍</a></li>
+                    <li><a href="#gallery">游戏画廊</a></li>
+                    <li><a href="#join">加入我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>联系我们</h4>
+                <p>Email: 3121727594@qq.com</p>
+                <p>QQ群: 3121727594</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 机械农场 Minecraft服务器 | 本网站与Mojang AB没有从属关系</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
